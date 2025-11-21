@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario - Plataforma de Desarrollo</title>
+    <link rel="stylesheet" href="examen/estilos.css">
+    <script src="examen/registro.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Registro de Usuario</h2>
+        <p class="instrucciones">Complete todos los campos correctamente para registrarse en la plataforma.</p>
+
+        <form id="registroForm" novalidate>
+            <label>Nombre Completo:</label>
+            <input type="text" id="nombre">
+            <p class="error" id="errorNombre"></p>
+
+            <label>Correo Electrónico:</label>
+            <input type="email" id="correo">
+            <p class="error" id="errorCorreo"></p>
+
+            <label>Edad:</label>
+            <input type="number" id="edad" min="1">
+            <p class="error" id="errorEdad"></p>
+
+            <label>Lenguaje de Programación Preferido:</label>
+            <select id="lenguaje">
+                <option value="">Seleccione...</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="C#">C#</option>
+                <option value="C++">C++</option>
+            </select>
+            <p class="error" id="errorLenguaje"></p>
+
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+</body>
+</html>
